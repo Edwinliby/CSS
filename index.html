@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Presentation</title>
+
+    <link rel="stylesheet" href="/CSS components/index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+    <section class="blank">
+        SCROLL DOWN
+    </section>
+
+    <section class="introSection">
+        <div class="intro common">
+            <span data-aos="fade-right" data-aos-delay="500" data-aos-duration="1200">I</span>
+            <span>N</span>
+            <span data-aos="fade-down" data-aos-delay="700" data-aos-duration="1200">T</span>
+            <span data-aos="fade-up-left" data-aos-delay="800" data-aos-duration="1200">R</span>
+            <span>O</span>
+        </div>
+        <div class="to common" data-aos="zoom-in" data-aos-duration="500">to</div>
+        <div class="css common">
+            <img data-aos="flip-up" data-aos-delay="600" data-aos-duration="3000" src="/Assects/c.png" alt="c">
+            <img data-aos="flip-left" data-aos-delay="600" data-aos-duration="3000" src="/Assects/s.png" alt="s">
+            <img data-aos="flip-up" data-aos-delay="600" data-aos-duration="3000" src="/Assects/s-1.png" alt="s">
+        </div>
+    </section>
+
+    <section class="what">
+        <div class="question">
+            <div data-aos="fade-up" style="width: fit-content;">What is css?</div>
+            <img data-aos="zoom-in" data-aos-delay="500" data-aos-duration="500" src="/Assects/memes/think2.png"
+                alt="thinking meme">
+        </div>
+        <div class="answer">
+            <div style="display: flex; gap: 1rem;" data-aos="fade-up" data-aos-delay="2000">According to
+                <div style="display: flex;">
+                    <b style="color:#0057e7;">G</b>
+                    <b style="color:#d62d20;">o</b>
+                    <b style="color:#ffa700;">o</b>
+                    <b style="color:#0057e7;">g</b>
+                    <b style="color:#008744;">l</b>
+                    <b style="color:#d62d20;">e</b>
+                </div>
+                search
+            </div>
+            <div class="whatiscss" data-aos="zoom-in" data-aos-delay="3000" data-aos-duration="1500">
+                <p style="margin-bottom: 1rem;">What is CSS, with example?</p>
+                <p style="font-weight: 300;">
+                    CSS (Cascading Style Sheets) is <span style="background: #1049a3;">used to style and layout web
+                        pages</span> — for example,
+                    to alter the font, color, size, and spacing of your content, split it into multiple columns,
+                    or add animations and other decorative features. <span style="font-size: small;">15-Apr-2023</span>
+                </p>
+                <div style="display: flex; padding-top: 1.5rem; align-items: center; gap: .8rem;">
+                    <img style="object-fit: scale-down; background-color: #fff; height: 1.8rem; width: 1.8rem; border-radius: 100%;"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAY1BMVEUVFBoAAAYAAAALCREPDhWAgIGUk5VVVVeRkZI/P0L////U1NWbm5w3Nzrh4eFsbG4AAAwAAAl4eHrq6uq2trefn6DJycq8vL3Dw8RhYGKFhYfj4uPS0dJoZ2kwLzNNTE/w8PDE+L0pAAAAc0lEQVR4AY2OtQHEMBAE5RGbman/Jp/lT33ZLYubFyGFABV+tLESZ3xAiJOULM6L8vtXddMauj4JAH03GJr6UhD70RATgHKKGd28XADtwDiv6R+ItxcQ7wGQRwxjcsLyA2wdlYXbykr/hsnqFcyLrJS4c0/uTQYUQ25oSwAAAABJRU5ErkJggg=="
+                        alt="">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" style="text-decoration: none; color: #fff;">
+                        <div>
+                            <p style="font-size: 1rem;">mozilla.org</p>
+                            <p style="font-size: .75rem; padding-top: .3rem;">https://developer.mozilla.org/en-US/docs/Web/CSS</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="desc">
+        <div style="display: flex; flex-direction: column;">
+            <img class="carFrame" src="/Assects/carframe.png" alt="">
+            <b style="font-size: 2rem;">With only HTML</b>
+            <b style="font-size: .6rem;">***yes it is pixelated, did it on purpose</b>
+        </div>
+        <div style="display: flex; flex-direction: column;">
+            <img class="carFrame"
+                src="https://imgd.aeplcdn.com/0x0/n/cw/ec/14054/huracan-evo-exterior-right-front-three-quarter-2.jpeg"
+                alt="">
+            <b style="font-size: 2rem;">With HTML + <b style="font-size: 2.5rem;" class="rainbow">css</b></b>
+            <b style="font-size: .6rem;">***it won't move, you need javascript</b>
+        </div>
+    </section>
+
+    <div class="topic">
+        <b>Thing that we will discuss today :</b>
+        <div>
+            <ul>Float
+                <li>Left</li>
+                <li>Right</li>
+                <li>None</li>
+            </ul>
+            <ul>Position
+                <li>fixed</li>
+                <li>absolute</li>
+                <li>relative</li>
+                <li>sticky</li>
+            </ul>
+            <ul>Display
+                <li>block</li>
+                <li>inline</li>
+                <li>inline-block</li>
+                <li>none</li>
+            </ul>
+            <ul>Flex
+                <li>flex</li>
+                <li>inline-flex</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="topic">
+        
+    </div>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

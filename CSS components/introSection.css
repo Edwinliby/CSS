@@ -1,0 +1,117 @@
+.introSection{
+    flex-direction: column;
+    gap: 2rem;
+    font-weight: 900;
+}
+
+.common {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    display: flex;
+}
+
+.intro {
+    font-size: 10rem;
+    gap: 5px;
+}
+
+.intro span:nth-child(2) {
+    rotate: 6deg;
+    transform: translateY(5px);
+    animation: text-flicker 3s linear infinite;
+}
+
+.intro span:last-child {
+    animation: text-flicker 4s linear infinite;
+}
+
+.to {
+    font-size: 8rem;
+}
+
+.css img {
+    width: 10rem;
+    height: 10rem;
+    object-fit: contain;
+    transition: all 0.5s ease-in-out;
+}
+
+.css img:first-child,
+.css img:last-child {
+    rotate: -5deg;
+}
+
+.css img:nth-child(2) {
+    rotate: 5deg;
+}
+
+.css img:hover{
+    rotate: 0deg;
+}
+
+@media(width<600px){
+    .intro,.to{
+        font-size: 6.5rem;
+    }
+    .css img{
+        width: 7rem;
+        height: 7rem;
+    }
+}
+
+@keyframes text-flicker {
+    0% {
+        opacity: 0.1;
+        text-shadow: 0px 0px #4bebeb;
+    }
+
+    2% {
+        opacity: 1;
+        text-shadow: 0px 0px #4bebeb;
+    }
+
+    8% {
+        opacity: 0.1;
+        text-shadow: 0px 0px #4bebeb;
+    }
+
+    9% {
+        opacity: 1;
+        text-shadow: 0px 0px #4bebeb;
+    }
+
+    12% {
+        opacity: 0.1;
+        text-shadow: 0px 0px #4bebeb;
+    }
+
+    20% {
+        opacity: 1;
+        text-shadow: 0px 0px #4bebeb
+    }
+
+    25% {
+        opacity: 0.3;
+        text-shadow: 0px 0px #4bebeb
+    }
+
+    30% {
+        opacity: 1;
+        text-shadow: 0px 0px #4bebeb
+    }
+
+    70% {
+        opacity: 0.7;
+        text-shadow: 0px 0px #4bebeb
+    }
+
+    77% {
+        opacity: .9;
+        text-shadow: 0px 0px #4bebeb
+    }
+
+    100% {
+        opacity: .9;
+        text-shadow: 0px 0px #4bebeb
+    }
+}
