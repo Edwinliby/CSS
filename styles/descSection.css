@@ -1,13 +1,5 @@
 .topic {
-    scroll-snap-align: start;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    padding: 2rem;
     font-size: 1.2rem;
 }
 
