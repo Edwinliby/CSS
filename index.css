@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+body {
+    background-size: 100px 100px;
+    background-image:
+        linear-gradient(to right, rgb(128, 128, 128,0.15) 1px, transparent 1px),
+        linear-gradient(to bottom, rgb(128, 128, 128,0.15) 1px, transparent 1px);
+}
+
+section {
+    scroll-snap-align: start;
+    font-family: 'Raleway', sans-serif;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.blank {
+    text-align: center;
+    font-size: 10rem;
+    font-weight: 900;
+    -webkit-text-stroke: rgb(219, 219, 219) 1px;
+    color: #f7f7f7;
+}
+
+@media(width<600px) {
+    .blank {
+        font-size: 5rem;
+    }
+}
+
+
+/* IntroSection start*/
+
+.introSection{
+    flex-direction: column;
+    gap: 2rem;
+    font-weight: 900;
+}
+
+.common {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    display: flex;
+}
+
+.intro {
+    font-size: 10rem;
+    gap: 5px;
+}
+
+.intro span:nth-child(2) {
+    rotate: 6deg;
+    transform: translateY(5px);
+    animation: text-flicker 3s linear infinite;
+}
+
+.intro span:last-child {
+    animation: text-flicker 4s linear infinite;
+}
+
+.to {
+    font-size: 8rem;
+}
+
+.css img {
+    width: 10rem;
+    height: 10rem;
+    object-fit: contain;
+    transition: all 0.5s ease-in-out;
+}
+
+.css img:first-child,
+.css img:last-child {
+    rotate: -5deg;
+}
+
+.css img:nth-child(2) {
+    rotate: 5deg;
+}
+
+.css img:hover{
+    rotate: 0deg;
+}
+
+@media(width<600px){
+    .intro,.to{
+        font-size: 6.5rem;
+    }
+    .css img{
+        width: 7rem;
+        height: 7rem;
+    }
+}
+
+@keyframes text-flicker {
+    0% {
+        opacity: 0.1;
+        text-shadow: 0px 0px #4bebeb;
+    }
+
+    2% {
+        opacity: 1;
+        text-shadow: 0px 0px #4bebeb;
+    }
+
+    8% {
+        opacity: 0.1;
+        text-shadow: 0px 0px #4bebeb;
+    }
+
+    9% {
+        opacity: 1;
+        text-shadow: 0px 0px #4bebeb;
+    }
+
+    12% {
+        opacity: 0.1;
+        text-shadow: 0px 0px #4bebeb;
+    }
+
+    20% {
+        opacity: 1;
+        text-shadow: 0px 0px #4bebeb
+    }
+
+    25% {
+        opacity: 0.3;
+        text-shadow: 0px 0px #4bebeb
+    }
+
+    30% {
+        opacity: 1;
+        text-shadow: 0px 0px #4bebeb
+    }
+
+    70% {
+        opacity: 0.7;
+        text-shadow: 0px 0px #4bebeb
+    }
+
+    77% {
+        opacity: .9;
+        text-shadow: 0px 0px #4bebeb
+    }
+
+    100% {
+        opacity: .9;
+        text-shadow: 0px 0px #4bebeb
+    }
+}
+
+/* IntroSection ends*/
+
+
+/* WhatSection starts*/
+
+.what {
+    flex-direction: column;
+    font-weight: 900;
+}
+
+.question {
+    font-family: 'Raleway', sans-serif;
+    font-size: 10rem;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.question img {
+    height: 10rem;
+    object-fit: contain;
+}
+
+.answer {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+    gap: 1rem;
+}
+
+.whatiscss {
+    width: 50%;
+    height: fit-content;
+    font-family: sans-serif;
+    padding: 2rem;
+    background-color: #1e202c;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+    box-shadow: -10px 10px 0px 0px rgba(0, 0, 0, 0.75);
+}
+
+.whatiscss p {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.desc {
+    gap: 3rem;
+}
+
+.carFrame {
+    mix-blend-mode: multiply;
+    width: 25rem;
+    height: 20rem;
+    object-fit: contain;
+}
+
+.rainbow {
+    background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400%;
+}
+
+@media(width<600px) {
+    .question {
+        font-size: 4rem;
+    }
+
+    .question img {
+        height: 5rem;
+    }
+
+    .answer {
+        font-size: 1.5rem;
+    }
+
+    .whatiscss {
+        width: 20rem;
+    }
+
+    .desc {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .carFrame {
+        width: 18rem;
+        height: 15rem;
+    }
+}
+
+@keyframes rainbow_animation {
+    0% {
+        background-position: 0;
+    }
+
+    50% {
+        background-position: 100%;
+    }
+}
+
+/* WhatSection ends*/
+
+/* Topic section*/
+
+.day4,
+.day3,
+.end {
+    font-family: 'Poppins', sans-serif;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+
+.date {
+    background-color: #000;
+    color: #fff;
+    border-radius: 14px;
+    padding: .8rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    box-shadow: -3px 3px gray;
+}
+
+.doubtimg {
+    height: 8rem;
+}
+
+.day4 b,
+.end b,
+.end p {
+    font-size: 3rem;
+}
+
+.day4 ul {
+    font-weight: 700;
+    border: 1px solid #000;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    min-width: 12rem;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    box-shadow: -3px 3px;
+    transition: all .3s ease-in-out;
+}
+
+.day4 ul:hover {
+    transform: translateX(-8px) translateY(8px);
+    box-shadow: 0px 0px;
+}
+
+.day4 ul li {
+    font-weight: 400;
+    margin-left: 2rem;
+    font-size: 1.3rem;
+}
+
+.day4 ul li a {
+    text-decoration: none;
+}
+
+.day4Topic {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.coolGlass {
+    position: absolute;
+    height: 5rem;
+    top: 9rem;
+    right: 7.5rem;
+}
+
+.tobe{
+    height: 10rem;
+    position: relative;
+    top: -1.4rem;
+}
+
+@media (width<600px) {
+    .day4 {
+        font-size: 1rem;
+        height: fit-content;
+    }
+
+    .day4 b,
+    .end p,
+    .end b {
+        margin-top: 4rem;
+        font-size: 2rem;
+    }
+
+    .doubt img {
+        height: 5rem;
+    }
+
+    .day4 ul {
+        font-size: 1rem;
+    }
+
+    .day4 ul li {
+        font-size: 1rem;
+    }
+
+    .day3Topic {
+        gap: 1rem;
+        margin: 1rem 0;
+    }
+
+    .grandpa{
+        height: 23rem;
+    }
+
+    .coolGlass {
+        height: 3.5rem;
+        top: 6.5rem;
+        right: 5.5rem;
+    }
+}
+
+/* Topic section ends*/

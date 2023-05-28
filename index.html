@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Presentation</title>
 
-    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/index.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
@@ -89,35 +89,81 @@
         </div>
     </section>
 
-    <section class="topic">
-        <span>28/05/2023</span>
-        <b>Thing that we will discuss today :</b>
-        <div>
+    <section class="day4">
+        <span class="date">27/05/2023</span>
+        <div style="display: flex; align-items: center; gap: 1rem;">
+            <b>Today we lets start with basics :</b>
+            <img class="doubtimg" src="/Assects/memes/success.png" alt="">
+        </div>
+        <div class="day4Topic">
+            <ul>Basics
+                <li style="background-color: aqua;">background-color</li>
+                <li style="color: red;">Font color</li>
+                <li style="font-size: 2rem;">Font size</li>
+                <li style="font-weight: 900;">Font weight</li>
+                <li style="font-style: italic;">Font style</li>
+                <li style="text-decoration: underline;">Text decoration</li>
+            </ul>
+            <ul>Basic styling
+                <li style="padding: 1rem;">Padding</li>
+                <li style="margin: 1rem;">Margin</li>
+                <li style="border: 1px solid black;">Border</li>
+                <li style="border-radius: 1rem; border: 1px solid black; margin-top: .5rem;">Border radius</li>
+            </ul>
+            <ul>Box Model
+                <li style="list-style: none;"><img style="width: 10rem;"
+                        src="https://www.simplilearn.com/ice9/free_resources_article_thumb/CSS-Box-Model.png" alt="">
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="day4">
+        <span class="date">28/05/2023</span>
+        <div style="display: flex; align-items: center; gap: 1rem;">
+            <b>Today we will discuss some more complex stuffs :</b>
+            <img class="doubtimg" src="/Assects/memes/doubt.png" alt="">
+        </div>
+        <div class="day4Topic">
             <ul>Float
-                <li>Left</li>
-                <li>Right</li>
-                <li>None</li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/float">Left</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/float">Right</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/float">None</a></li>
             </ul>
             <ul>Position
-                <li>fixed</li>
-                <li>absolute</li>
-                <li>relative</li>
-                <li>sticky</li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position">Relative</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position">Absolute</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position">Fixed</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position">Sticky</a></li>
             </ul>
             <ul>Display
-                <li>block</li>
-                <li>inline</li>
-                <li>inline-block</li>
-                <li>none</li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display">Block</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display">inline</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display">inline-block</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display">none</a></li>
             </ul>
             <ul>Flex
-                <li>flex</li>
-                <li>inline-flex</li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display">Flex</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display">inline-flex</a></li>
+                <span style="font-size: .7rem;">(inline-flex is basically the same as flex)</span>
             </ul>
         </div>
     </section>
 
 
+    <section class="end">
+        <p>Hope you will built something cool with <b>CSS</b></p>
+        <div style="position: relative;">
+            <img class="grandpa" src="Assects/memes/ok.png" alt="">
+            <img data-aos="fade-left" data-aos-delay="1500" data-aos-duration="500" class="coolGlass"
+                src="Assects/memes/coolglass.png" alt="">
+        </div>
+
+        <div data-aos="fade-left" data-aos-delay="3000" data-aos-duration="500" style="display: flex; align-items: center; position: absolute; bottom: 2rem;">
+            <b>So yaa...</b>
+            <img class="tobe" src="/Assects/memes/tobecontinued.png" alt="">
+        </div>
+    </section>
 
     <script>
         AOS.init();
